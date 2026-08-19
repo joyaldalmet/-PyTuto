@@ -1,0 +1,107 @@
+{
+  "topics": [
+    {
+      "name": "Variables",
+      "type": "Fundamentals",
+      "explanation": "A variable is a name used to store data in memory so it can be reused later in a program. Python does not require you to declare a type — it is inferred automatically.",
+      "example": "age = 20\nname = \"Riya\"\nprint(name, \"is\", age, \"years old\")",
+      "common_mistakes": [
+        "Using a variable before assigning it a value",
+        "Using Python keywords (like 'class' or 'print') as variable names",
+        "Confusing '=' (assignment) with '==' (comparison)"
+      ],
+      "practice_tip": "Try creating variables for your name, age, and favorite color, then print them together in one sentence."
+    },
+    {
+      "name": "Data Types",
+      "type": "Fundamentals",
+      "explanation": "Python has built-in data types such as int (whole numbers), float (decimals), str (text), and bool (True/False).",
+      "example": "x = 10        # int\ny = 3.14      # float\nname = \"Sam\"   # str\nis_valid = True # bool",
+      "common_mistakes": [
+        "Trying to add a string and a number directly (e.g. \"Age: \" + 20 causes an error)",
+        "Forgetting quotes around strings"
+      ],
+      "practice_tip": "Use type() on different variables to see what data type Python assigns them."
+    },
+    {
+      "name": "If-Elif-Else",
+      "type": "Control Flow",
+      "explanation": "Conditional statements let your program make decisions and run different code blocks depending on whether a condition is True or False.",
+      "example": "age = 18\nif age >= 18:\n    print(\"You can vote\")\nelse:\n    print(\"Not eligible yet\")",
+      "common_mistakes": [
+        "Forgetting the colon ':' at the end of if/elif/else lines",
+        "Incorrect indentation inside the if block",
+        "Using '=' instead of '==' in the condition"
+      ],
+      "practice_tip": "Write a program that checks if a number is positive, negative, or zero."
+    },
+    {
+      "name": "Loops",
+      "type": "Control Flow",
+      "explanation": "Loops let you repeat a block of code multiple times. A 'for' loop is used when you know how many times to repeat, and a 'while' loop is used when repetition depends on a condition.",
+      "example": "for i in range(5):\n    print(i)\n\ncount = 0\nwhile count < 3:\n    print(\"Hello\")\n    count += 1",
+      "common_mistakes": [
+        "Forgetting to update the loop variable in a while loop, causing an infinite loop",
+        "Off-by-one errors with range()",
+        "Incorrect indentation inside the loop body"
+      ],
+      "practice_tip": "Write a loop that prints the multiplication table of 5."
+    },
+    {
+      "name": "Functions",
+      "type": "Fundamentals",
+      "explanation": "A function is a reusable block of code that performs a specific task. You define it once using 'def' and can call it many times.",
+      "example": "def greet(name):\n    return \"Hello, \" + name\n\nprint(greet(\"Aman\"))",
+      "common_mistakes": [
+        "Forgetting to use 'return' when a value needs to be sent back",
+        "Mismatched number of arguments when calling the function",
+        "Forgetting parentheses when calling the function"
+      ],
+      "practice_tip": "Write a function that takes two numbers and returns their sum."
+    },
+    {
+      "name": "Lists",
+      "type": "Data Structures",
+      "explanation": "A list is an ordered, changeable collection used to store multiple items in a single variable, written with square brackets.",
+      "example": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfruits.append(\"mango\")\nprint(fruits[0])",
+      "common_mistakes": [
+        "Index out of range errors (e.g. accessing fruits[10] on a 3-item list)",
+        "Forgetting that list indexing starts at 0, not 1"
+      ],
+      "practice_tip": "Create a list of your 3 favorite movies and print each one using a loop."
+    },
+    {
+      "name": "Dictionaries",
+      "type": "Data Structures",
+      "explanation": "A dictionary stores data as key-value pairs, useful for looking up values quickly using a key instead of a numeric index.",
+      "example": "student = {\"name\": \"Riya\", \"age\": 20}\nprint(student[\"name\"])",
+      "common_mistakes": [
+        "Trying to access a key that doesn't exist (causes KeyError)",
+        "Confusing dictionaries { } with lists [ ]"
+      ],
+      "practice_tip": "Create a dictionary storing your name, age, and course, then print each value."
+    },
+    {
+      "name": "Common Errors",
+      "type": "Debugging",
+      "explanation": "Beginners often run into a few common Python errors: SyntaxError (typos or missing punctuation), IndentationError (incorrect spacing), NameError (using an undefined variable), and TypeError (mixing incompatible data types).",
+      "example": "# Example of IndentationError\nif True:\nprint(\"Hello\")  # missing indentation before print",
+      "common_mistakes": [
+        "Not reading the error message carefully — it usually tells you the exact line and reason",
+        "Ignoring indentation consistency (mixing tabs and spaces)"
+      ],
+      "practice_tip": "When you get an error, read the last line of the traceback first — it names the error type and often the fix."
+    },
+    {
+      "name": "String Operations",
+      "type": "Fundamentals",
+      "explanation": "Strings are sequences of characters. Python provides many built-in methods to work with them, like .upper(), .lower(), .split(), and .format().",
+      "example": "name = \"python\"\nprint(name.upper())\nprint(name.capitalize())",
+      "common_mistakes": [
+        "Forgetting that strings are immutable — methods return a new string rather than changing the original",
+        "Mixing up single and double quotes inconsistently"
+      ],
+      "practice_tip": "Take a sentence and try reversing it, counting its words, and converting it to uppercase."
+    }
+  ]
+}
